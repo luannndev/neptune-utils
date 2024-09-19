@@ -38,11 +38,10 @@ public class DateUtility {
         try {
             date = DATE_FORMAT.parse(time);
         } catch (ParseException ignored) {
-            date = parseDefaultTime(time);
+            date = HOUR_AND_MINUTES_FORMAT.parse(time);
         }
         return date;
     }
-
 
     /**
      * Parses a given string representation of time in hours and minutes format.
