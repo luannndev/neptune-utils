@@ -1,3 +1,3 @@
 rootProject.name = "javautility"
-include("commom")
+include("common")
 include("discord")
